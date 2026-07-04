@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootConfiguration
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "com.technicalconcept.interview.service;")
+@ComponentScan
 public class AnnotationApplication {
 
 	public static void main(String[] args) {
@@ -17,9 +17,9 @@ public class AnnotationApplication {
 		SpringApplication.run(AnnotationApplication.class, args);
 	}
 
-	@Bean
-	public Faculty faculty(){
-		return  new Faculty();
-	}
+//	@Bean
+//	public Faculty faculty(){
+//		return  new Faculty();
+//	}
 
 }
